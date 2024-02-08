@@ -5,7 +5,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const app = express()
-const port = process.env.APP_PORT
+const port = process.env.APP_PORT || 5017;
 const { DB_PORT, DB_HOST, MYSQL_DB, DB_USER, DB_PASS } = process.env
 console.log(DB_HOST, DB_PORT)
 
